@@ -1,0 +1,39 @@
+{
+  "name": "@wycliffewasonga/svg-compiler",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/wycliffewasonga/svg-compiler#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wycliffewasonga/svg-compiler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wycliffewasonga/svg-compiler/issues"
+  },
+  "author": {
+    "name": "Wycliffe Wasonga",
+    "email": "wycliffewasonga@gmail.com"
+  },
+  "main": "src/index.js",
+  "bin": {
+    "@wycliffewasonga/svg-compiler": "bin/svg-compiler",
+    "svg-compiler": "bin/svg-compiler"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "svg-compiler"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "commander": "^6.2.0",
+    "datauri": "^3.0.0",
+    "esm": "^3.2.25"
+  }
+}
