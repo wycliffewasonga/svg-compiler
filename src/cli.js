@@ -1,5 +1,5 @@
 import program from 'commander';
-import { process } from './index';
+import { compile } from './index';
 
 program
     .version('0.0.1')
@@ -17,9 +17,9 @@ export function cli(args) {
         const { input, output, doNotMinimize } = program.opts();
 
         try {
-            process(input, output, !doNotMinimize);
+            compile(input, output, !doNotMinimize);
         } catch(ex) {
-            console.log(ex.message || ex);
+            console.error(ex.message || ex);
         }
     } catch(err) {
         program.outputHelp();
